@@ -1,0 +1,189 @@
+<html>
+<head>
+<tittle>
+</tittle>
+<style>
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 16px;
+    
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background-color:green;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+}
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 10px;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.ytn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: red;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.center{
+    text-align: center;
+}
+</style>
+</head>
+<body>
+ <nav id="navbar">
+        <div id="logo">
+            <a href="homebankright.html"><img src="logo.jpeg" alt="MyOnlinbank.com"></a>
+        </div>
+        <ul>
+           <li class="item"><a href="homebankright.html">Home</a></li>
+            <li class="item"><a href="homebankright.html">Services</a></li>
+            <li class="item"><a href="table.html">Our Clients</a></li>
+            <li class="item"><a href="homebankright.html">Contact Us</a></li>
+        </ul>
+    </nav>
+<section id="contact">
+        <h1 class="h-primary center">TRANFER MONEY</h1>
+        <div class="center">
+           <button class="ytn">TRANFER FROM</button>
+          </div> 
+        <div id="contact-box">
+            <form action="">
+                
+            
+                <div class="form-group">
+                    <label for="account">ACCOUNT NO.: </label>
+                    <input type="account" name="name" id="phone" placeholder="Enter your account no.">
+                </div>
+<div class="form-group">
+                    <label for="account NO.">AMOUNT: </label>
+                    <input type="amoumt" name="name" id="phone" placeholder="Enter amoumt">
+                </div>
+                <br>
+                <div class="center">
+           <button class="ytn">TRANFER TO</button>
+          </div> 
+                <div class="form-group">
+                    <label for="account NO.">ACCOUNT NO.: </label>
+                    <input type="account" name="name" id="phone" placeholder="Enter amoumt">
+                </div>
+
+       <div class="center">
+           <a href="confirm.html"><button class="btn">CONFIRM</button></a>
+          </div> 
+       </form>
+        </div>
+    </section>
+<footer>
+        <div class="center">
+<div id="logo">
+            <img src="logo.jpeg" alt="MyOnlinbank.com">
+        </div>
+            Copyright &copy; www.Myonlinebank.com. All rights reserved!
+        </div>
+<div class="center">
+Copyright &copy; LAVKUSH VISHWAKARMA. All rights reserved!
+<a href="mailto:lavkushvishwakarma1999@gmail.com"><br><button class="btn">SEND EMAIL</button></a>
+</div>
+    </footer>
+</body>
+</html>
+
